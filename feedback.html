@@ -1,50 +1,18 @@
 <html>
 <head>
-<title>Feedback</title>
-<style>
-body {
-background-image: url("shopping.jpg");
-background-repeat:no-repeat;
-background-size: cover;
-}
-.col {
-    display: block;
-    background:#1e4d9f80;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    opacity: 0.8;
-    filter:alpha(opacity=80);
-    width: 400px;
-    padding: 25px;
-    border-radius: 20px;
-    position: left-bottom;
-}
-</style>
-</head>
-<br><br><br><div class="col" style="background: lightgrey">
-<center>
-<br>
+<title>feedback.html</title>
 <h1>FEEDBACK</h1>
+</head>
 <form action="http://feedback.php" method="post" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page. \nAre you sure?&quot;);} catch (e) {return false;}">
+</form>
+ Name:<br>
+  <input type="text" name="Name" required><br>
+ Email:<br>
+  <input type="email" name="Email Id" required><br>
+ Message:<br>
+ <input type="text" name="Message" width="50"height="90"size="50" required>
 
-Name:
-<input type="text" placeholder="Enter your name" name="Name" required>
-<br/>
- <br/> <br/>
-Email:
-<input type="email" placeholder="Enter your Email" name="EmailId" required>
-<br/>
- <br/> <br/>
-Message:
-<textarea rows="10" cols="16" input type="text" placeholder="Type your message" name="message" required /></textarea>
-<br/>
- <br/> <br/>
-<br/>
- <br/>
+<br><br><br>
 <input type="submit" name="upload" value="SUBMIT">
 </form>
-</center>
-</body>
 </html>
